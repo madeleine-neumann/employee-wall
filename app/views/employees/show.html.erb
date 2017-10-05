@@ -1,20 +1,29 @@
-  <div class="row mb-4">
-    <div class="col-md-6">
-        <%= @employee.name %>
-    </div>
-    <div class="col-md-6">
-        <%= image_tag @employee.avatar, class: 'employees__photo employees__framed-photo' %>
-    </div>
+<h2 class="my-4 headline"><%= @employee.name %> </h2>
+<div class="row mb-4">
+  <div class="col-md-12">
+      <%= image_tag @employee.avatar, class: 'employees__photo employees__framed-photo' %>
   </div>
-  <div class="row mb-4">
+</div>
+<div class="row mb-4">
+  <div class="col-md-6">
+    <p>
+      <span class="accent">
+        Profession:
+      </span>
+      <%= @employee.business %>
+    </p>
+  </div>
+</div>
 
-    <div class="col-md-6">
-        <%= @employee.business %>
-    </div>
-  </div>
+<div class="row mb-4">
+  <div class="col-md-12">
+    <p class="accent">
+      About
+      <%= @employee.name %>:
+    </p>
+    <p>
+      <%= @employee.bio %>
+    </p>
 
-  <div class="row mb-4">
-    <div class="col-md-12">
-        <%= @employee.bio %>
-    </div>
   </div>
+</div>

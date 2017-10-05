@@ -1,0 +1,20 @@
+body {
+  background-color: #26272E;
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.headline {
+  color: #14AF97;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.accent {
+  color: #14AF97;
+  font-weight: bold;
+
+  &:hover {
+    color: #14AF97;
+  }
+}

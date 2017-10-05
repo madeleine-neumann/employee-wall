@@ -1,23 +1,17 @@
 <section class="employees">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Photo</th>
-      </tr>
-    </thead>
+  <h1 class="headline">9elements employees</h1>
+  <% @employees.each do |employee| %>
+    <div class="employees__card my-4">
+      <p>
+        <%=link_to employee_path(employee), class: 'accent' do %>
+          <%= image_tag employee.avatar, class: 'employees__photo' %>
+          <p class="employees__name"><%= employee.name %></p>
+        <%end %>
+      </p>
 
-    <tbody>
-      <% @employees.each do |employee| %>
-        <tr>
-          <td><%= employee.name %></td>
-          <td>
-            <%=link_to employee_path(employee) do %>
-              <%= image_tag employee.avatar, class: 'employees__photo' %>
-            <%end %>
-          </td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    </div>
+
+
+  <% end %>
+
 </section>
