@@ -1,0 +1,23 @@
+<section class="employees">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Photo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @employees.each do |employee| %>
+        <tr>
+          <td><%= employee.name %></td>
+          <td>
+            <%=link_to employee_path(employee) do %>
+              <%= image_tag employee.avatar, class: 'employees__photo' %>
+            <%end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

@@ -1,0 +1,20 @@
+  <div class="row mb-4">
+    <div class="col-md-6">
+        <%= @employee.name %>
+    </div>
+    <div class="col-md-6">
+        <%= image_tag @employee.avatar, class: 'employees__photo employees__framed-photo' %>
+    </div>
+  </div>
+  <div class="row mb-4">
+
+    <div class="col-md-6">
+        <%= @employee.business %>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-12">
+        <%= @employee.bio %>
+    </div>
+  </div>

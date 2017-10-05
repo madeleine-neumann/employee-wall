@@ -1,0 +1,11 @@
+.employees {
+  &__photo {
+    width: 300px;
+    height: auto;
+  }
+
+  &__framed-photo {
+    border: 10px solid black;
+    transform: rotate(-10deg)
+  }
+}
