@@ -1,7 +1,7 @@
 <section class="employees">
   <h1 class="headline">9elements employees</h1>
   <% @employees.each do |employee| %>
-    <div class="employees__card py-2 px-2 my-4">
+    <div class="employees__card py-2 px-2 my-4 mx-2">
       <p>
         <%=link_to employee_path(employee), class: 'accent' do %>
           <%= image_tag employee.avatar, class: 'employees__photo' %>
