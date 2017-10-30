@@ -12,10 +12,15 @@
   }
 
   &__coffee-cup {
-    position: absolute;
-    z-index: 2;
-    top: 20px;
-    right: -10%;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 20px;
+      right: -10%;
+    }
+
   }
 
   &__polaroid {
