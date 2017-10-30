@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # admin panel
 gem 'rails_admin', '~> 1.2'
 

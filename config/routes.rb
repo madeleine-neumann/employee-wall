@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :employees
+  resources :tests
 
   root to: 'employees#index'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
