@@ -1,29 +1,31 @@
-<h2 class="my-4 headline"><%= @employee.name %> </h2>
-<div class="row mb-4">
-  <div class="col-md-12">
-      <%= image_tag @employee.avatar, class: 'employees__photo employees__framed-photo' %>
+<div class="container">
+  <h2 class="my-4 headline"><%= @employee.name %> </h2>
+  <%= image_tag "cup-of-coffee.png", class: "employees__coffee-cup" %>
+  <div class="row mb-4">
+    <div class="col-md-12">
+        <%= image_tag @employee.avatar, class: 'employees__polaroid employees__photo employees__photo--show' %>
+    </div>
   </div>
-</div>
-<div class="row mb-4">
-  <div class="col-md-6">
-    <p>
+  <div class="row mb-4 employees__text-box">
+    <div class="col-md-6">
       <span class="accent">
         Profession:
       </span>
       <%= @employee.business %>
-    </p>
+    </div>
+  </div>
+
+  <div class="row mb-4 employees__text-box">
+    <div class="col-md-12">
+      <p class="accent">
+        About
+        <%= @employee.name %>:
+      </p>
+      <p>
+        <%= @employee.bio %>
+      </p>
+
+    </div>
   </div>
 </div>
 
-<div class="row mb-4">
-  <div class="col-md-12">
-    <p class="accent">
-      About
-      <%= @employee.name %>:
-    </p>
-    <p>
-      <%= @employee.bio %>
-    </p>
-
-  </div>
-</div>
